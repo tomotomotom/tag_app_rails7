@@ -3,12 +3,13 @@
   <div class="message-field">
     <%= f.text_field :text, placeholder: 'type a message' %>
   </div>
-    <div class="tag-field">
+  <div class="tag-field">
     <%= f.text_field :tag_name, placeholder: 'add tags' %>
+    <div id="search-result"></div>
   </div>
   <div class="image-field">
     <div class="click-upload">
-      <%= f.file_field :image %>
+      <%= f.file_field :image, name: 'post_form[image]'%>
     </div>
   </div>
   <div class="submit-btn">
